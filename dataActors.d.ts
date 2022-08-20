@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Actors.json
 //=============================================================================
-declare const $dataActors: ({
+declare interface $dataActor {
     id: number;
     battlerName: string;
     characterIndex: number;
@@ -21,4 +21,6 @@ declare const $dataActors: ({
     nickname: string;
     note: string;
     profile: string;
-} | null)[];
+};
+
+declare const $dataActors: ($dataActor | null)[];

@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Enemies.json
 //=============================================================================
-declare var $dataEnemies: ({
+declare interface $dataEnemie {
     id: number;
     actions: {
         conditionParam1: number;
@@ -27,4 +27,6 @@ declare var $dataEnemies: ({
     name: string;
     note: string;
     params: number[];
-} | null)[];
+};
+
+declare const $dataEnemies: ($dataEnemie | null)[];

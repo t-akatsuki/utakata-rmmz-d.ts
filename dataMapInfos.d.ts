@@ -1,7 +1,7 @@
 //=============================================================================
 // data/MapInfos.json
 //=============================================================================
-declare var $dataMapInfos: ({
+declare interface $dataMapInfo {
     id: number;
     expanded: boolean;
     name: string;
@@ -9,4 +9,6 @@ declare var $dataMapInfos: ({
     parentId: number;
     scrollX: number;
     scrollY: number;
-} | null)[];
+};
+
+declare const $dataMapInfos: ($dataMapInfo | null)[];

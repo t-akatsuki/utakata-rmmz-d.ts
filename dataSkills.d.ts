@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Skills.json
 //=============================================================================
-declare var $dataSkills: ({
+declare interface $dataSkill {
     id: number;
     animationId: number;
     damage: {
@@ -36,4 +36,6 @@ declare var $dataSkills: ({
     tpCost: number;
     tpGain: number;
     messageType: number;
-} | null)[];
+};
+
+declare const $dataSkills: ($dataSkill | null)[];

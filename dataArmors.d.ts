@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Armors.json
 //=============================================================================
-declare var $dataArmors: ({
+declare interface $dataArmor {
     id: number;
     atypeId: number;
     description: string;
@@ -16,4 +16,6 @@ declare var $dataArmors: ({
     note: string;
     params: number[];
     price: number;
-} | null)[];
+};
+
+declare const $dataArmors: ($dataArmor | null)[];

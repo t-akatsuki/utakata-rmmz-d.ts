@@ -1,3 +1,6 @@
+//=============================================================================
+// data/System.json
+//=============================================================================
 declare namespace $dataSystem {
     export namespace advanced {
         const gameId: number;

@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Weapons.json
 //=============================================================================
-declare var $dataWeapons: ({
+declare interface $dataWeapon {
     id: number;
     animationId: number;
     description: string;
@@ -17,4 +17,6 @@ declare var $dataWeapons: ({
     params: number[];
     price: number;
     wtypeId: number;
-} | null)[];
+};
+
+declare const $dataWeapons: ($dataWeapon | null)[];

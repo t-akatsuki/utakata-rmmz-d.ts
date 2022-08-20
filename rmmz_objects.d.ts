@@ -1382,6 +1382,8 @@ declare class Game_CharacterBase {
     constructor(...args: any[]);
     initialize(): void;
     initMembers(): void;
+    get x(): number;
+    get y(): number;
     _x: any;
     _y: any;
     _realX: any;

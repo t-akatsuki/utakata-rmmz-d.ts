@@ -1,11 +1,13 @@
 //=============================================================================
 // data/Tilesets.json
 //=============================================================================
-declare var $dataTilesets: ({
+declare interface $dataTileset {
     id: number;
     flags: number[];
     mode: number;
     name: string;
     note: string;
     tilesetNames: string[];
-} | null)[];
+};
+
+declare var $dataTilesets: ($dataTileset | null)[];

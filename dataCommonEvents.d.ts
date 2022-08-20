@@ -1,7 +1,7 @@
 //=============================================================================
 // data/CommonEvents.json
 //=============================================================================
-declare var $dataCommonEvents: ({
+declare interface $dataCommonEvent {
     id: number;
     list: {
         code: number;
@@ -11,4 +11,6 @@ declare var $dataCommonEvents: ({
     name: string;
     switchId: number;
     trigger: number;
-} | null)[];
+};
+
+declare const $dataCommonEvents: ($dataCommonEvent | null)[];

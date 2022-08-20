@@ -1506,7 +1506,54 @@ declare class Game_CharacterBase {
     endBalloon(): void;
 }
 declare function Game_Character(...args: any[]): void;
-declare class Game_Character {
+declare class Game_Character extends Game_CharacterBase {
+    static readonly const ROUTE_END: number;
+    static readonly const ROUTE_MOVE_DOWN: number;
+    static readonly const ROUTE_MOVE_LEFT: number;
+    static readonly const ROUTE_MOVE_RIGHT: number;
+    static readonly const ROUTE_MOVE_UP: number;
+    static readonly const ROUTE_MOVE_LOWER_L: number;
+    static readonly const ROUTE_MOVE_LOWER_R: number;
+    static readonly const ROUTE_MOVE_UPPER_L: number;
+    static readonly const ROUTE_MOVE_UPPER_R: number;
+    static readonly const ROUTE_MOVE_RANDOM: number;
+    static readonly const ROUTE_MOVE_TOWARD: number;
+    static readonly const ROUTE_MOVE_AWAY: number;
+    static readonly const ROUTE_MOVE_FORWARD: number;
+    static readonly const ROUTE_MOVE_BACKWARD: number;
+    static readonly const ROUTE_JUMP: number;
+    static readonly const ROUTE_WAIT: number;
+    static readonly const ROUTE_TURN_DOWN: number;
+    static readonly const ROUTE_TURN_LEFT: number;
+    static readonly const ROUTE_TURN_RIGHT: number;
+    static readonly const ROUTE_TURN_UP: number;
+    static readonly const ROUTE_TURN_90D_R: number;
+    static readonly const ROUTE_TURN_90D_L: number;
+    static readonly const ROUTE_TURN_180D: number;
+    static readonly const ROUTE_TURN_90D_R_L: number;
+    static readonly const ROUTE_TURN_RANDOM: number;
+    static readonly const ROUTE_TURN_TOWARD: number;
+    static readonly const ROUTE_TURN_AWAY: number;
+    static readonly const ROUTE_SWITCH_ON: number;
+    static readonly const ROUTE_SWITCH_OFF: number;
+    static readonly const ROUTE_CHANGE_SPEED: number;
+    static readonly const ROUTE_CHANGE_FREQ: number;
+    static readonly const ROUTE_WALK_ANIME_ON: number;
+    static readonly const ROUTE_WALK_ANIME_OFF: number;
+    static readonly const ROUTE_STEP_ANIME_ON: number;
+    static readonly const ROUTE_STEP_ANIME_OFF: number;
+    static readonly const ROUTE_DIR_FIX_ON: number;
+    static readonly const ROUTE_DIR_FIX_OFF: number;
+    static readonly const ROUTE_THROUGH_ON: number;
+    static readonly const ROUTE_THROUGH_OFF: number;
+    static readonly const ROUTE_TRANSPARENT_ON: number;
+    static readonly const ROUTE_TRANSPARENT_OFF: number;
+    static readonly const ROUTE_CHANGE_IMAGE: number;
+    static readonly const ROUTE_CHANGE_OPACITY: number;
+    static readonly const ROUTE_CHANGE_BLEND_MODE: number;
+    static readonly const ROUTE_PLAY_SE: number;
+    static readonly const ROUTE_SCRIPT: number;
+
     constructor(...args: any[]);
     initialize(): void;
     initMembers(): void;
@@ -1548,56 +1595,8 @@ declare class Game_Character {
     findDirectionTo(goalX: any, goalY: any): 0 | 2 | 6 | 8 | 4;
     searchLimit(): number;
 }
-declare namespace Game_Character {
-    const ROUTE_END: number;
-    const ROUTE_MOVE_DOWN: number;
-    const ROUTE_MOVE_LEFT: number;
-    const ROUTE_MOVE_RIGHT: number;
-    const ROUTE_MOVE_UP: number;
-    const ROUTE_MOVE_LOWER_L: number;
-    const ROUTE_MOVE_LOWER_R: number;
-    const ROUTE_MOVE_UPPER_L: number;
-    const ROUTE_MOVE_UPPER_R: number;
-    const ROUTE_MOVE_RANDOM: number;
-    const ROUTE_MOVE_TOWARD: number;
-    const ROUTE_MOVE_AWAY: number;
-    const ROUTE_MOVE_FORWARD: number;
-    const ROUTE_MOVE_BACKWARD: number;
-    const ROUTE_JUMP: number;
-    const ROUTE_WAIT: number;
-    const ROUTE_TURN_DOWN: number;
-    const ROUTE_TURN_LEFT: number;
-    const ROUTE_TURN_RIGHT: number;
-    const ROUTE_TURN_UP: number;
-    const ROUTE_TURN_90D_R: number;
-    const ROUTE_TURN_90D_L: number;
-    const ROUTE_TURN_180D: number;
-    const ROUTE_TURN_90D_R_L: number;
-    const ROUTE_TURN_RANDOM: number;
-    const ROUTE_TURN_TOWARD: number;
-    const ROUTE_TURN_AWAY: number;
-    const ROUTE_SWITCH_ON: number;
-    const ROUTE_SWITCH_OFF: number;
-    const ROUTE_CHANGE_SPEED: number;
-    const ROUTE_CHANGE_FREQ: number;
-    const ROUTE_WALK_ANIME_ON: number;
-    const ROUTE_WALK_ANIME_OFF: number;
-    const ROUTE_STEP_ANIME_ON: number;
-    const ROUTE_STEP_ANIME_OFF: number;
-    const ROUTE_DIR_FIX_ON: number;
-    const ROUTE_DIR_FIX_OFF: number;
-    const ROUTE_THROUGH_ON: number;
-    const ROUTE_THROUGH_OFF: number;
-    const ROUTE_TRANSPARENT_ON: number;
-    const ROUTE_TRANSPARENT_OFF: number;
-    const ROUTE_CHANGE_IMAGE: number;
-    const ROUTE_CHANGE_OPACITY: number;
-    const ROUTE_CHANGE_BLEND_MODE: number;
-    const ROUTE_PLAY_SE: number;
-    const ROUTE_SCRIPT: number;
-}
 declare function Game_Player(...args: any[]): void;
-declare class Game_Player {
+declare class Game_Player extends Game_Character {
     constructor(...args: any[]);
     initialize(): void;
     initMembers(): void;

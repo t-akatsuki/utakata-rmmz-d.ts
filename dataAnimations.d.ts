@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Animations.json
 //=============================================================================
-declare var $dataAnimations: ({
+declare interface $dataAnimation {
     id: number;
     displayType: number;
     effectName: string;
@@ -29,4 +29,6 @@ declare var $dataAnimations: ({
         };
     }[];
     speed: number;
-} | null)[];
+};
+
+declare const $dataAnimations: ($dataAnimation | null)[];

@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Items.json
 //=============================================================================
-declare var $dataItems: ({
+declare interface $dataItem {
     id: number;
     animationId: number;
     consumable: boolean;
@@ -31,4 +31,6 @@ declare var $dataItems: ({
     speed: number;
     successRate: number;
     tpGain: number;
-} | null)[];
+};
+
+declare const $dataItems: ($dataItem | null)[];

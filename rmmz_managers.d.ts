@@ -1,6 +1,8 @@
 //=============================================================================
 // rmmz_managers.js
 //=============================================================================
+/// <reference path="rmmz_objects.d.ts"/>
+
 /// <reference path="dataActors.d.ts"/>
 /// <reference path="dataClasses.d.ts"/>
 /// <reference path="dataSkills.d.ts"/>
@@ -17,6 +19,21 @@
 /// <reference path="dataSystem.d.ts"/>
 /// <reference path="dataMapInfos.d.ts"/>
 /// <reference path="dataMap.d.ts"/>
+
+const $gameTemp: Game_Temp;
+const $gameSystem: Game_System;
+const $gameScreen: Game_Screen;
+const $gameTimer: Game_Timer;
+const $gameMessage: Game_Message;
+const $gameSwitches: Game_Switches;
+const $gameVariables: Game_Variables;
+const $gameSelfSwitches: Game_SelfSwitches;
+const $gameActors: Game_Actors;
+const $gameParty: Game_Party;
+const $gameTroop: Game_Troop;
+const $gameMap: Game_Map;
+const $gamePlayer: Game_Player;
+
 //-----------------------------------------------------------------------------
 declare function DataManager(): void;
 declare namespace DataManager {

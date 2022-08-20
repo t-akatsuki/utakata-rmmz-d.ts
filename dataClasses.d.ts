@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Classes.json
 //=============================================================================
-declare var $dataClasses: ({
+declare interface $dataClass {
     id: number;
     expParams: number[];
     traits: {
@@ -17,4 +17,6 @@ declare var $dataClasses: ({
     name: string;
     note: string;
     params: number[][];
-} | null)[];
+};
+
+declare const $dataClasses: ($dataClass | null)[];

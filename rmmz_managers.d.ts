@@ -1,7 +1,22 @@
 //=============================================================================
 // rmmz_managers.js
 //=============================================================================
+/// <reference path="dataActors.d.ts"/>
+/// <reference path="dataClasses.d.ts"/>
+/// <reference path="dataSkills.d.ts"/>
+/// <reference path="dataItems.d.ts"/>
+/// <reference path="dataWeapons.d.ts"/>
+/// <reference path="dataArmors.d.ts"/>
+/// <reference path="dataEnemies.d.ts"/>
+/// <reference path="dataTroops.d.ts"/>
+/// <reference path="dataStates.d.ts"/>
+/// <reference path="dataAnimations.d.ts"/>
+/// <reference path="dataTilesets.d.ts"/>
+/// <reference path="dataCommonEvents.d.ts"/>
+/// <reference path="dataCommonEvents.d.ts"/>
 /// <reference path="dataSystem.d.ts"/>
+/// <reference path="dataMapInfos.d.ts"/>
+/// <reference path="dataMap.d.ts"/>
 //-----------------------------------------------------------------------------
 declare function DataManager(): void;
 declare namespace DataManager {

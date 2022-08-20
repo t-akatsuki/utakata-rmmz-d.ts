@@ -1,7 +1,7 @@
 //=============================================================================
 // data/Troops.json
 //=============================================================================
-declare var $dataTroops: ({
+declare interface $dataTroop {
     id: number;
     members: {
         enemyId: number;
@@ -34,4 +34,6 @@ declare var $dataTroops: ({
         }[];
         span: number;
     }[];
-} | null)[];
+};
+
+declare const $dataTroops: ($dataTroop | null)[];

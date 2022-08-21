@@ -212,9 +212,9 @@ declare class Game_Variables {
     constructor(...args: any[]);
     initialize(): void;
     clear(): void;
-    _data: any[] | undefined;
-    value(variableId: any): any;
-    setValue(variableId: any, value: any): void;
+    _data: number[];
+    value(variableId: number): number;
+    setValue(variableId: number, value: number): void;
     onChange(): void;
 }
 declare function Game_SelfSwitches(...args: any[]): void;

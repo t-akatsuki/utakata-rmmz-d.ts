@@ -79,8 +79,8 @@ declare namespace DataManager {
     function maxSavefiles(): number;
     function savefileInfo(savefileId: any): any;
     function savefileExists(savefileId: any): any;
-    function saveGame(savefileId: any): any;
-    function loadGame(savefileId: any): any;
+    function saveGame(savefileId: number): Promise<number>;
+    function loadGame(savefileId: number): Promise<number>;
     function makeSavename(savefileId: any): any;
     function selectSavefileForNewGame(): void;
     function makeSavefileInfo(): {
@@ -140,14 +140,14 @@ declare namespace StorageManager {
     const _forageKeysUpdated: boolean;
     function isLocalMode(): boolean;
     function saveObject(saveName: any, object: any): Promise<any>;
-    function loadObject(saveName: any): any;
+    function loadObject(saveName: string): Promise<any>;
     function objectToJson(object: any): Promise<any>;
     function jsonToObject(json: any): Promise<any>;
     function jsonToZip(json: any): Promise<any>;
     function zipToJson(zip: any): Promise<any>;
     function saveZip(saveName: any, zip: any): any;
     function loadZip(saveName: any): any;
-    function exists(saveName: any): any;
+    function exists(saveName: string): boolean;
     function remove(saveName: any): any;
     function saveToLocalFile(saveName: any, zip: any): Promise<any>;
     function loadFromLocalFile(saveName: any): Promise<any>;
